@@ -1,3 +1,84 @@
 body {
   background: peachpuff;
 }
+
+.container{
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.a, .b, .c, .d, .e, .f, .g, .h {
+  border: 1px solid #ababab;
+  background-color: #d8d8d8;
+  min-height: 15vh;
+}
+
+.b-c-d, .e-f-g {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.b-c-d {
+   margin-top: 3vh;
+}
+.e-f-g {
+  margin: 3vh 0;
+}
+
+.b-c-d > div, .e-f-g > div {
+  min-width: 30%;
+}
+
+.h {
+  min-height: 43vh;
+}
+
+
+@media (min-width: 1000px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .a{
+    min-width: 100%;
+    min-height: 30vh;
+  }
+
+  .h {
+    margin-top: 3vh;
+
+  }
+  .b-c-d, .e-f-g {
+    min-height: 30vh;
+    min-width: 80vh;
+  }
+
+  /* .b, .c, .d, .e, .f, .g {
+    margin: auto;
+  } */
+
+  .e-f-g{
+    margin-bottom: 0;
+  }
+
+  .h {
+    min-width: 17vh;
+    flex-basis: 17%;
+  }
+
+
+  .b-c-d-e-f-g{
+    flex-basis: 80%;
+  }
+
+
+
+
+}
